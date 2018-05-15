@@ -1,7 +1,8 @@
-import Sequelize from "sequelize";
+import Sequelize from 'sequelize';
 
 const sequelize = new Sequelize('slack', 'Abdul', 'postgres', {
   dialect: 'postgres',
+  underscored: true,
 });
 
 const models = {
